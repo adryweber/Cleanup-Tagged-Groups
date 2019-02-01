@@ -13,7 +13,7 @@
     }
   ],
   "menu" : {
-    "title" : "Cleanup Useless Groups",
+    "title" : "Cleanup Tagged Groups",
     "items" : [
       "com.bohemiancoding.sketch.runscriptidentifier"
     ]
