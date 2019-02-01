@@ -4,6 +4,6 @@ As a result of the script [react-sketchapp](https://github.com/airbnb/react-sket
 
 This plugin cleans layer list in the whole document by ungrouping groups with special names. Special group name must start with a symbol 'low line' _.
 
-Before | After 
-![](01.png) | ![](02.png) 
-
+| Before | After |
+| ------ |------ |
+| ![](01.png) | ![](02.png) |
