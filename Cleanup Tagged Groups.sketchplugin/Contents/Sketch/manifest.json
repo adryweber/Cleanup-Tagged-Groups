@@ -1,0 +1,23 @@
+{
+  "author" : "Andrew Tkachenko",
+  "version" : "1.1",
+  "description" : "A plugin that cleans your layer list by ungrouping groups with special names. Special group name must start with a symbol 'low line' _.",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "name" : "Cleanup Tagged Groups",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu" : {
+    "title" : "Cleanup Useless Groups",
+    "items" : [
+      "com.bohemiancoding.sketch.runscriptidentifier"
+    ]
+  },
+  "authorEmail" : "adry@adry.ru",
+  "name" : "Cleanup Tagged Groups"
+}

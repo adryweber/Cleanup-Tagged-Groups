@@ -1,0 +1,25 @@
+var onRun = function(context) {
+    var pages = context.document.pages()
+
+    for (var i=0; i < [pages count]; i++) {
+        var page = [pages objectAtIndex:i]
+
+        layers = page.layers()
+        unrollGroupsInLayer(layers)
+    }
+};
+
+function unrollGroupsInLayer(layers){
+
+    for (var i=0; i < [layers count]; i++) {
+        var layer = [layers objectAtIndex:i]
+
+        if (layer.layers){
+            unrollGroupsInLayer(layer.layers())
+        }
+        
+        if (layer.className() == "MSLayerGroup" && layer.name().charAt(0) == '_') {
+            layer.ungroup()
+        }         
+    }
+}
